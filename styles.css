@@ -1,0 +1,467 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1b3a4b, #1f5d8b); /*biru gelap*/
+    color: #ffffff;
+    padding-top: 70px; /*Sesuaikan nilai ini dengan tinggi header*/
+
+  }
+
+  header {
+    background: linear-gradient(135deg, #2a4b6b, #1f5d8b);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /*Membuat header tetap di atas*/
+    top: 0; /*Posisi dari atas*/
+    width: 100%; 
+    z-index: 1000; /*Memastikan header berada di depan elemen lain*/
+    border-bottom: 4px solid #4cafef;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+/*Profile and Navbar*/
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+
+  .header-container img {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+  }
+
+
+  #about {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+    max-width: 100%; /*Membatasi Lebar agar teks tidak terlalu lebar*/
+    margin: 0;/*Memastikan bagian About Me berada di tengah*/
+    
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4x 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #about p {
+    font-size: 1.2rem; /* Mengatur ukuran font agar lebih nyaman dibaca */
+    line-height: 1.6; /* Menambahkan jarak antar baris agar lebih mudah dibaca */
+    color: white; /* Memberikan warna teks yang lebih lembut */
+    margin-top: 1rem; /* Memberikan jarak antara judul dan paragraf */
+    margin-bottom: 2rem; /* Memberikan jarak setelah paragraf */
+    text-align: justify; /* Menyusun teks agar rata kiri-kanan */
+    padding: 0 1rem; /* Memberikan padding agar teks tidak terlalu dekat dengan tepi layar */
+  }
+
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+  }
+
+  /*NAVBAR*/
+  header {
+    width: 100%;
+    border: 2px solid black;
+    background: linear-gradient(135deg, #2a4b6b, #1f5d8b);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  .header-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  header:hover {
+    background: linear-gradient(135deg, #2a4b6b, #1f5d8b);
+  }
+
+  nav {
+    margin-left: auto;
+    margin-right: 150px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #0004ff;  /*Efek hover untuk link*/
+    transform: scale(1.1);
+  }
+
+  body {
+    margin-top: 70px;
+  }
+
+  section {
+    background: linear-gradient(135deg, #2a4b6b, #1f5d8b);
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 10px; /*Sudut yang lebih halus*/
+  }
+  
+  section p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: isolate;
+  }
+
+
+/*Content My Project*/
+#tugas {
+  padding: 20px;
+  text-align: center;
+}
+
+#tuga h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.tugas-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ; /*membuat 2 kolom*/
+  gap: 20px;
+  justify-content: center;
+}
+
+    /*Gradasi untuk setiap div atau card */
+
+.tugas-card {
+  position: relative;
+  border: 2px solid #444; /*Border Lebih Gelap*/
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4a6f87, #1f5d8b); /*Gradasi pada card project*/
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*Efek transisi*/
+}
+
+.tugas-card:hover {
+  transform: translateY(-10px) scale(1); /*Efek angkat saat hover*/
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.8); /*Shadow saat hover*/
+}
+
+/*Gambar pada certificate*/
+
+.tugas-card img {
+  width: 95%; /*Mengatur Lebar gambar*/
+  height: auto; /*Menjaga proporsi gambar*/
+  object-fit: contain; /*Gambar tidak akan terpotong dan tetap utuh*/
+  margin-bottom: 1rem; /*Memberikan jarak antara gambar dan teks judul*/
+  border: 3px solid #f0f0f0; /*Bingkai pada gambar*/
+  display: block;
+}
+
+.tugas-card h3 {
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.tugas-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.tugas-link:hover {
+  color: #00d9ff;
+}
+
+.tugas-card a {
+  display: block;
+  width: 245px;
+}
+
+.tugas-card h3:hover {
+  color: #0004ff;  /*Efek hover untuk link*/
+  transform: scale(1.1);  
+}
+
+/*END My Projcet*/
+
+  /*Content Certificate*/
+
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*membuat 2 kolom*/
+    gap: 1rem;
+    justify-content: center;
+  }
+
+      /*Gradasi untuk setiap div atau card */
+
+  .project-card {
+    position: relative;
+    border: 2px solid #444; /*Border Lebih Gelap*/
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4a6f87, #1f5d8b); /*Gradasi pada card project*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Efek transisi*/
+  }
+
+  .project-card:hover {
+    transform: translateY(-10px) scale(1); /*Efek angkat saat hover*/
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.8); /*Shadow saat hover*/
+  }
+
+/*Gambar pada certificate*/
+
+  .project-card img {
+    width: 100%; /*Mengatur Lebar gambar*/
+    border-radius: 15px;
+    height: auto; /*Menjaga proporsi gambar*/
+    object-fit: contain; /*Gambar tidak akan terpotong dan tetap utuh*/
+    margin-bottom: 1rem; /*Memberikan jarak antara gambar dan teks judul*/
+    border: 3px solid #f0f0f0; /*Bingkai pada gambar*/
+    transition: transform 0.3s ease;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  /*END Certificate*/
+
+  footer {
+    background-color: #1f5d8b;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+/**Contact**/
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+  cursor: pointer;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f5d8b;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact form button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+#contact form button:hover {
+  background-color: #00d9ff;
+  transform: scale(1.1);
+
+}
+
+/*Social Links*/
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00d9ff;  /* Warna biru saat hover */
+  transform: scale(1.2);
+}
+/*End*/
+
+
+/* Responsive 768px (tablet, Large mobile devices) */
+@media (max-width: 768px) {
+
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 80%;
+      margin-top: 20px;
+    }
+
+    .header-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    nav ul {
+      text-align: center;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .tugas-gallery {
+      grid-template-columns: repeat(2, 1fr); /*2 kolom utk layar kecil*/
+    }
+
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact form input,
+    #contact form textarea,
+    #contact form button {
+      width: 90%;
+    }
+  }
+
+/* For devices with width up to 480px (small mobile devices) */
+@media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    .tugas-gallery {
+      grid-template-columns: repeat(1,1fr); /*1 Kolom utk layar sangat kecil*/
+    }
+    .tugas-card {
+      margin-bottom: 20px;
+    }
+    .progress-bar {
+      font-size: 14px;
+      padding: 0.4rem;
+    }
+
+    .project-card {
+      padding: 0.8rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+      font-size: 14px;
+      padding: 1rem;
+    }
+
+    #contact form input,
+    #contact form textarea,
+    #contact form button {
+      width: 100%;
+    }
+  }
+
+  /* Header responsive untuk layar kecil */
+@media (max-width: 600px) {
+  .header-container {
+    width: 100%;
+    padding: 10px;
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+}
