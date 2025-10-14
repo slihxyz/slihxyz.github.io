@@ -127,7 +127,7 @@ function loadExperience() {
                 <h3>System Engineer</h3>
                 <p class="experience-company"><a href="https://www.rackh.com/about/#:~:text=Hadir%20sebagai%20salah%20satu%20Perusahaan%20IT%20Terbaik%20di,Service%20Provider%20%28ISP%29%20yang%20terbukti%20berpengalaman%20sejak%20lama" target="_blank">PT RackH Lintas Asia</a></p>
                 <p class="experience-duration">Agustus 2025 - Sekarang</p>
-                <p>Bertugas menangani kebutuhan pelanggan di berbagai lokasi, mulai dari pemasangan jaringan baru hingga penanganan gangguan. Memastikan setiap instalasi berjalan dengan standar kualitas tinggi dan memberikan solusi cepat ketika terjadi kendala, demi menjaga konektivitas pelanggan tetap optimal.</p>
+                <p>Menangani setup dan instalasi server sesuai kebutuhan customer, termasuk instalasi OS hingga server siap diakses. Bertanggung jawab melakukan pemasangan kabel saat proses interkoneksi dengan pihak lain di Data Center.</p>
             </div>
         </div>
         
@@ -278,4 +278,5 @@ function loadContact() {
             alert('Gagal mengirim pesan: ' + JSON.stringify(err));
         });
     });
+
 }
