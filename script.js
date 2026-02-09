@@ -102,7 +102,7 @@ function loadExperience() {
                 <img src="${slihhh_ipb}" alt="Modern data center interior with rows of server racks and blue ambient lighting" />
             </div>
             <div class="experience-details">
-                <h3>IT Support (<i>Internship</i><)/h3>
+                <h3>IT Support (Internship)/h3>
                 <p class="experience-company"><a href="https://www.ipb.ac.id/page/math2/" target="_blank">Departemen Matematika IPB</a></p>
                 <p class="experience-duration">Januari 2024 - Juni 2024</p>
                 <p>Selama magang sebagai IT Support di Departemen Matematika IPB, saya bertanggung jawab menjaga kinerja komputer staf, mengatasi permasalahan seperti sistem lambat atau gangguan jaringan, serta memberikan bantuan kepada mahasiswa dalam instalasi software praktikum. Saya juga menyiapkan laboratorium sebelum kegiatan praktikum dan menangani gangguan koneksi mahasiswa agar tetap terhubung dengan jaringan dan server.</p>
@@ -113,7 +113,7 @@ function loadExperience() {
                 <img src="${slihhh_njp}" alt="PT Nusa Jaya Prasetyo" />
             </div>
             <div class="experience-details">
-                <h3>Field Technician (<i>Based on Project</i>)</h3>
+                <h3>Field Technician (Based on Project)</h3>
                 <p class="experience-company"><a href="https://njp.ebilling.co.id/" target="_blank">PT Nusa Jaya Prasetyo</a></p>
                 <p class="experience-duration">Juni 2025 - Agustus 2025</p>
                 <p>Bertugas menangani kebutuhan pelanggan di berbagai lokasi, mulai dari pemasangan jaringan baru hingga penanganan gangguan. Memastikan setiap instalasi berjalan dengan standar kualitas tinggi dan memberikan solusi cepat ketika terjadi kendala, demi menjaga konektivitas pelanggan tetap optimal.</p>
@@ -280,3 +280,4 @@ function loadContact() {
     });
 
 }
+
